@@ -1,4 +1,4 @@
-// Write a program to find the product of 2 numbers using pointers
+
 #include<iostream>
 using namespace std;
 int maxandmin(int a,int b ,int c,int *smallest){
