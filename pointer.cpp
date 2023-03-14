@@ -1,21 +1,28 @@
-
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
-int swap(int *ada,int*adb){
-     int temp=*ada;
-     *ada=*adb;
-     *adb=temp;
+void analyise(string *s ){
+  int cnt=0;
+  char Firstchar = (*s)[0];
+  char Lastchar= (*s)[s->length()-1];
+  for(int i=0;i<s->length();i++){
+    if((*s)[i]=='t'||(*s)[i]=='T'){
+        cnt++;
+    }
+  }
+  cout<<"First character = "<<Firstchar<<endl;
+  cout<<"Last character = "<<Lastchar<<endl;
+  cout<<"The number of time t used is "<<cnt<<endl;
+
     
 }
-int main(){
-int a,b;
-   cin>>a>>b;
-   cout<<"a="<<a<<"  b="<<b<<endl;
-int *ada=&a;
-int *adb=&b;
-   swap(&a,&b);
-   cout<<"a="<<a<<"  b="<<b<<endl;
+using namespace std;
 
-    return 0 ;
+int main()
+{
+    string s;
+    cout<<"Pls enter the string :";
+    cin >> s;
+    analyise(&s);
+     return 0;
 }
-
