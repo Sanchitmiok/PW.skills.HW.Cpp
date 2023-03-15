@@ -1,28 +1,25 @@
+// Q1 -Write a program to print the kth element of an array using pointers.
+// The first line of the input contains the size of the array and the value of k.
+// The second line of input contains the elements of the array. You can assume that 0 <= k < size
+// of the array.
 #include <iostream>
-#include <string>
 using namespace std;
-void analyise(string *s ){
-  int cnt=0;
-  char Firstchar = (*s)[0];
-  char Lastchar= (*s)[s->length()-1];
-  for(int i=0;i<s->length();i++){
-    if((*s)[i]=='t'||(*s)[i]=='T'){
-        cnt++;
-    }
-  }
-  cout<<"First character = "<<Firstchar<<endl;
-  cout<<"Last character = "<<Lastchar<<endl;
-  cout<<"The number of time t used is "<<cnt<<endl;
-
-    
+int fun(int * arr,int m){
+    int *add=arr+m-1;
+    cout<<"Mth position element is <<"<<*add;
 }
-using namespace std;
-
 int main()
-{
-    string s;
-    cout<<"Pls enter the string :";
-    cin >> s;
-    analyise(&s);
+{   int n,m;   
+
+    cout<<"pls enter the size and number of array :"<<endl;
+    cin>>n>>m;
+     int arra[n];
+     for(int i=0;i<n;i++){
+      cin>>arra[i];
+     }
+     for(int i=0;i<n;i++){
+     cout<<arra[i]<<" ";
+     }cout<<endl;
+    fun(arra,m);
      return 0;
 }
