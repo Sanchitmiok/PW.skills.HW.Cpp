@@ -4,15 +4,10 @@
 // of the array.
 #include <iostream>
 using namespace std;
-int fun(int * arr,int m){
-    int *add=arr+m-1;
-    cout<<"Mth position element is <<"<<*add;
-}
 int main()
-{   int n,m;   
-
+{   int n;   
     cout<<"pls enter the size and number of array :"<<endl;
-    cin>>n>>m;
+    cin>>n;
      int arra[n];
      for(int i=0;i<n;i++){
       cin>>arra[i];
@@ -20,6 +15,12 @@ int main()
      for(int i=0;i<n;i++){
      cout<<arra[i]<<" ";
      }cout<<endl;
-    fun(arra,m);
+     int sum=0;
+     for(int i=0;i<n;i++){
+      int*add=arra;
+      sum+=add[i];
+      add++;
+     }
+     cout<<"sum is "<<sum;
      return 0;
 }
