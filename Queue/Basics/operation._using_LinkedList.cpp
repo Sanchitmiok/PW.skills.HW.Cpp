@@ -67,20 +67,6 @@ class queue{
 int main()
 {   
     queue qu;
-    cout<<qu.isEmpty()<<endl;// yes=1
-    qu.enqueue(2);
-    qu.enqueue(7);
-    qu.enqueue(4);
-    qu.enqueue(6);
-    cout<<qu.dequeue()<<endl;// 2
-    qu.enqueue(19);
-    cout<<qu.Size()<<endl; // 4
-    cout<<qu.front()<<endl;// 7
-    while(not qu.isEmpty()){
-        cout<<qu.front()<<" ";
-        qu.dequeue();
-    }
-
        
     return 0;
 }
