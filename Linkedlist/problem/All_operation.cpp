@@ -145,20 +145,6 @@ int main()
      myslist.print();
      myslist.insertAthead(1);
      myslist.print();
-     myslist.insertAttail(5);
-     myslist.print();
-     myslist.insertAtkth(10, 2);
-     myslist.print();
-     myslist.deleteAthead();
-     myslist.print();
-     myslist.deleteAttail();
-     myslist.print();
-     myslist.insertAtkth(26, 1);
-     myslist.insertAthead(6);
-     myslist.insertAttail(9);
-     myslist.print();
-     myslist.deleteAtKth(3);
-     myslist.print();
 
      return 0;
 }
