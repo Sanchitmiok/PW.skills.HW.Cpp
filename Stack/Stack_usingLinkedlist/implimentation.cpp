@@ -54,11 +54,6 @@ int main()
     st.push(4);
     st.push(8);
     st.push(9);
-    st.pop();
-    st.pop();
-    st.pop();
-    st.pop();
-    st.top();
 
     return 0;
 }
