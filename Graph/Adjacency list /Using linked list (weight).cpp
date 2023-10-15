@@ -50,7 +50,6 @@ int main()
     cout << "Eges -> ";
     int Edges;
     cin >> Edges;
-    cout << flush;
     cout << "Enter edges " << endl;
     for (int i = 0; i < Edges; i++)
     {
